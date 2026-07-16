@@ -1,1 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>كتب الدكتورة عائشة الطويل</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+
+body{
+
+background:#f7f7f5;
+
+font-family:Cairo,sans-serif;
+
+}
+
+.hero{
+
+background:linear-gradient(135deg,#1E6B5B,#2E8B74);
+
+color:white;
+
+padding:70px;
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.book-card{
+
+background:white;
+
+border-radius:20px;
+
+padding:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+margin-bottom:50px;
+
+}
+
+.book-cover{
+
+width:100%;
+
+border-radius:15px;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.book-cover:hover{
+
+transform:scale(1.03);
+
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.gallery img{
+
+width:100%;
+
+border-radius:12px;
+
+margin-bottom:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.03);
+
+}
+
+footer{
+
+background:#163d36;
+
+color:white;
+
+padding:30px;
+
+text-align:center;
+
+margin-top:80px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold text-success"
+
+href="../index.html">
+
+الدكتورة عائشة الطويل
+
+</a>
+
+</div>
+
+</nav>
+
+<div class="hero">
+
+<h1>
+
+كتب الدكتورة عائشة الطويل
+
+</h1>
+
+<p>
+
+المؤلفات والإصدارات العلمية
+
+</p>
+
+</div>
+
+<div class="container">
+
+<div class="book-card">
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<img
+
+src="../images/books/livre1-cover.jpg"
+
+class="book-cover"
+
+onclick="showImage(this.src)">
+
+</div>
+
+<div class="col-lg-8">
+
+<h2>
+
+منهج الإمام السهيلي في التفسير بالرأي والاجتهاد
+
+</h2>
+
+<p>
+
+يتناول هذا الكتاب دراسة منهج الإمام السهيلي في تفسير القرآن الكريم، مع إبراز خصائص التفسير بالرأي والاجتهاد، وتحليل منهجه اللغوي والبلاغي والإشاري.
+
+</p>
+
+<hr>
+
+<h4>
+
+صور الفهرس
+
+</h4>
+
+<div class="row gallery">
+
+<div class="col-md-4">
+
+<img
+
+src="../images/books/livre1-sommaire1.jpg"
+
+onclick="showImage(this.src)">
+
+</div>
+
+<div class="col-md-4">
+
+<img
+
+src="../images/books/livre1-sommaire2.jpg"
+
+onclick="showImage(this.src)">
+
+</div>
+
+<div class="col-md-4">
+
+<img
+
+src="../images/books/livre1-sommaire3.jpg"
+
+onclick="showImage(this.src)">
+
+</div>
+
+</div>
+
+<hr>
+
+<h4>
+
+الغلاف الخلفي
+
+</h4>
+
+<img
+
+src="../images/books/livre1-back.jpg"
+
+class="book-cover"
+
+style="max-width:350px"
+
+onclick="showImage(this.src)">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Fenêtre d'agrandissement -->
+
+<div class="modal fade"
+
+id="imageModal"
+
+tabindex="-1">
+
+<div class="modal-dialog modal-xl modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-body text-center">
+
+<img
+
+id="modalImage"
+
+class="img-fluid">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© جميع الحقوق محفوظة للدكتورة عائشة الطويل
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function showImage(src){
+
+document.getElementById("modalImage").src=src;
+
+new bootstrap.Modal(document.getElementById("imageModal")).show();
+
+}
+
+</script>
+
+</body>
+
+</html>
