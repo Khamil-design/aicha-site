@@ -106,7 +106,17 @@ footer{
     padding:25px;
 
 }
+.gallery-img{
+    width:100%;
+    border-radius:15px;
+    transition:transform .35s ease, box-shadow .35s ease;
+    cursor:pointer;
+}
 
+.gallery-img:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
 </style>
 
 </head>
@@ -166,21 +176,17 @@ data-bs-target="#menu">
 
 <div class="row g-0">
 
-    <div class="col-lg-5">
+<div class="col-lg-5">
 
     <img src="../images/publication/publication1.jpg"
-         class="img-fluid rounded shadow mb-3"
+         class="gallery-img img-fluid rounded shadow mb-4"
          alt="Publication 1">
 
-    <div class="row">
+    <img src="../images/publication/publication2.jpg"
+         class="gallery-img img-fluid rounded shadow"
+         alt="Publication 2">
 
-        <div class="col-6 mb-3">
-            <img src="../images/publication/publication2.jpg"
-                 class="img-fluid rounded shadow"
-                 alt="Publication 2">
-        </div>
-    </div>
-    </div>
+</div>
 <div class="col-lg-7">
 
 <div class="publication-content">
