@@ -401,4 +401,21 @@
     </div>
 
 </footer>
+	<script>
+    // Compteur de visiteurs (service gratuit CountAPI, aucune inscription nécessaire)
+    (function () {
+        var namespace = "dr-aicha-eltaouil-site"; // identifiant unique du site
+        var counterKey = "index-page";
+        var el = document.getElementById("visitor-count");
+
+        fetch("https://api.countapi.xyz/hit/" + namespace + "/" + counterKey)
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                el.textContent = data.value.toLocaleString("ar-EG");
+            })
+            .catch(function () {
+                el.textContent = "—";
+            });
+    })();
+</script>
 </body>
