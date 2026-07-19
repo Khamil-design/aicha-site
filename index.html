@@ -399,41 +399,6 @@
         </p>
 
     </div>
-<script>
 
-async function loadVisitorCount(){
-
-    try{
-
-        const response = await fetch(
-        "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://khamil-design.github.io/aicha-site/"
-        );
-
-        const svg = await response.text();
-
-        const parser = new DOMParser();
-
-        const xml = parser.parseFromString(svg,"image/svg+xml");
-
-        const texts = xml.querySelectorAll("text");
-
-        if(texts.length >= 2){
-
-            document.getElementById("visitor-count").textContent =
-            texts[texts.length-1].textContent;
-
-        }
-
-    }catch(e){
-
-        document.getElementById("visitor-count").textContent = "---";
-
-    }
-
-}
-
-loadVisitorCount();
-
-</script>
 </footer>
 </body>
