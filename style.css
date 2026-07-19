@@ -131,3 +131,104 @@ body {
     box-shadow:0 12px 30px rgba(0,0,0,.25);
 
 }
+/*=============================
+            FOOTER
+==============================*/
+
+.site-footer{
+
+    background:#1E6B5B;
+
+    color:white;
+
+    margin-top:80px;
+
+    padding:45px 0 25px;
+
+}
+
+.footer-title{
+
+    font-family:'Cairo',sans-serif;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.footer-text{
+
+    color:#e8e8e8;
+
+    font-size:18px;
+
+}
+
+.site-footer hr{
+
+    border-color:rgba(255,255,255,.2);
+
+    margin:35px 0;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#f3f3f3;
+
+    margin:0;
+
+    font-size:16px;
+
+}
+
+/*=============================
+      VISITOR COUNTER
+==============================*/
+
+.visitor-counter{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:white;
+
+    color:#1E6B5B;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    font-family:'Cairo',sans-serif;
+
+    font-weight:700;
+
+    font-size:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.visitor-icon{
+
+    font-size:24px;
+
+}
+
+#visitor-count{
+
+    color:#C9A227;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
