@@ -253,3 +253,82 @@ body {
     color:#fff;
     transform:translateX(-3px);
 }
+/*==============================
+        SEARCH ENGINE
+==============================*/
+
+.search-results{
+
+    position:absolute;
+
+    top:100%;
+
+    right:0;
+
+    left:0;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    display:none;
+
+    max-height:450px;
+
+    overflow-y:auto;
+
+    z-index:9999;
+
+    margin-top:8px;
+
+}
+
+.search-item{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.search-item:hover{
+
+    background:#f3f8f6;
+
+}
+
+.search-item h6{
+
+    color:#1E6B5B;
+
+    margin:0 0 5px;
+
+    font-family:Cairo,sans-serif;
+
+}
+
+.search-item p{
+
+    margin:0;
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+.no-result{
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#888;
+
+}
